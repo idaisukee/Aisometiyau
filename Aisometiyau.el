@@ -8,7 +8,7 @@
                 (locate-dominating-file
                     (save-window-excursion
                         (magit-dired-jump)
-                        dired-directory)
+                        default-directory)
                     ".git"))
             (lock-file
                 (s-concat root ".git/index.lock"))
